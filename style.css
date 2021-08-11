@@ -1,0 +1,111 @@
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+  background: #e5e7eb;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./images/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vh 10vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.inspiration-message {
+  font-size: 1.25rem;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-flex {
+  display: block;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-flex {
+    display: flex;
+  }
+
+  .section-flex-child {
+    flex: 1 1 0%;
+  }
+}
+
+main {
+  padding: 5rem;
+}
+
+main section {
+  padding: 2rem;
+  background: white;
+}
+
+main p {
+  margin-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.gap-4 {
+  gap: 1.5rem;
+}
+
+.over-icon-ease {
+  transition: all ease-in-out 300ms;
+}
+.over-icon {
+  transition: color linear 300ms;
+  transition: transform cubic-bezier(0.68, -0.55, 0.27, 1.55) 300ms;
+}
+
+.over-icon:hover {
+  color: rgb(0, 121, 20);
+  transform: scale(1.25);
+}
